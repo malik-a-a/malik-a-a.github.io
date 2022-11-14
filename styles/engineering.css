@@ -1,0 +1,288 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;  
+    height: 100vh;  
+    background-color: #212121;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+
+}
+
+
+body h1 {
+    color: 6#61a6db;
+}
+
+section {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 0%;
+}
+
+.navbar {
+    background-color: #8798a0;
+    background: rgba(255,255,255,0.5);
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    padding-right: 30px;
+    padding-left: 6%;
+    margin-bottom: 4%;
+}
+
+.navbar h1 a {
+    text-decoration: none;
+    color: white;
+    font-size: auto;
+    position: relative;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content:'';
+    width: 0;
+    height: 4px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 70%;
+}
+
+
+#circles {
+    padding: 300px;
+}
+
+.col {
+    flex-basis: 60%;
+
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+#number {
+    font-weight: 600px;
+    color: #555;
+}
+
+svg  {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#pynumber {
+    font-weight: 600px;
+    color: #555;
+}
+
+
+.fadeInTop {
+    animation: fadeInTop 2s both;
+
+}
+
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.html {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: animh 3s linear forwards;
+}
+
+.css {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: animcss 1.9s linear forwards;
+}
+
+.js {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: animj 2.3s linear forwards;
+}
+
+.py {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: animpy 2.3s linear forwards;
+}
+
+.cpp {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: animcpp 2.3s linear forwards;
+}
+
+@keyframes animh {
+    100% {
+        stroke-dashoffset: 120;
+    }
+}
+
+@keyframes animcss {
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes animj {
+    100% {
+        stroke-dashoffset: 275;
+    }
+}
+
+@keyframes animcpp {
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes animpy {
+    100% {
+        stroke-dashoffset: 200;
+    }
+}
+
+#htmlCircle {
+    float: left;
+    margin-left: 5%;
+}
+
+#cssCircle {
+    float: left;
+    margin-left: 5%;
+}
+
+#jsCircle {
+    float: left;
+    margin-left: 5%;
+}
+
+#pyCircle {
+    float: left;
+    margin-left: 5%;
+    
+}
+#cppCircle {
+    float: left;
+    margin-left: 5%;
+    
+}
+
+.counter {
+    color: white;
+    float: left;
+}
+
+.percent {
+    color: white;
+    float: right;
+}
+
+#proficiency {
+    margin-bottom: 3%;
+    margin-left: 5%;
+    font-size: 30px;
+    color: white;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 0%;
+    
+}
+
+.text {
+    font-size: 22px;
+    color: white;
+}
+
+.headerText {
+    color: #a6e0fe;
+    padding-top: 2%;
+}
+
+.container {
+    padding-bottom: 20px;
+}

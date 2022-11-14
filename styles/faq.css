@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #8798a0;
+  background: rgba(255,255,255,0.5);
+  height: 12%;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  padding-right: 30px;
+  padding-left: 6%;
+  margin-bottom: 4%;
+}
+
+.navbar h1 a {
+  text-decoration: none;
+  color: white;
+  font-size: auto;
+  position: relative;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content:'';
+  width: 0;
+  height: 4px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 70%;
+}
+
+body {
+    background-color: grey;
+}
+
+.col {
+  flex-basis: 60%;
+}
+.faqHeader{
+  border-bottom: black;
+  padding: 20px 60px;
+}
+.faqContainer{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hrLine{
+width: 60%;
+margin: auto;
+
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faqPage {
+  /* background-color: #eee; */
+  color: white;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.faqBody{
+  margin: auto;
+  /* text-align: center; */
+ width: 50%; 
+ padding: auto;
+ 
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faqPage:hover {
+  background-color: darkgrey;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faqBody {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.faqPage:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
