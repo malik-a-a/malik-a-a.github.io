@@ -1,0 +1,87 @@
+
+.backg{
+background-image: url("https://i.pinimg.com/564x/9d/48/bd/9d48bd8ddc5ccb6e8121805696964438.jpg");
+background-position: 0px -20px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.box{
+background: #D3D3D3;
+padding: 10px;
+margin: 50px;
+}
+
+.box1{
+background: grey;
+padding: 10px;
+width: 25%;
+margin-right: auto;
+margin-left: auto;
+}
+
+.box2{
+background: grey;
+padding: 10px;
+width: auto;
+margin-right: auto;
+margin-left: auto;
+}
+
+.bluebox{
+background-image: url("https://thumbs.dreamstime.com/z/geometrical-islamic-mosaics-design-samarkand-interior-islamic-mosaic-design-133835867.jpg");
+/* background-repeat: no-repeat; */
+background-size: cover;
+background-size: 600px 600px;
+padding: 10px;
+margin: 10px;
+}
+
+.text_pic{
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+}
+
+.text1{
+color: #000099;
+text-shadow: 2px 1px #666699;
+font-family: 'Muli';
+}
+
+.text1-2{
+color: white;
+text-shadow: 4px 2px black;
+font-family: 'Muli';
+}
+
+.text2{
+color: #000099;
+font-family: 'Muli';
+font-size:1.2em;
+}
+
+.center {
+ text-align: center
+}
+
+.center-img {
+display: block;
+margin-right: auto;
+margin-left: auto;
+max-width: 100%;
+}
+
+.row {
+  display: flex;
+  height: 60%;
+  align-items:center;
+  font-size: auto;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 7%;
+}
+
+.col {
+  flex-basis: 60%;
+}
